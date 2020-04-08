@@ -1,5 +1,5 @@
 module "vpc" {
-  cidr_block = "10.0.0.0/16"
+  cidr = "10.0.0.0/16"
   source  = "app.terraform.io/castle-training/vpc/aws"
   version = "2.33.0"
 }

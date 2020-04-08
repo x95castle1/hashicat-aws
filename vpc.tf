@@ -1,3 +1,4 @@
-resource "aws_vpc" "main" {
-  cidr_block = "10.0.0.0/16"
+module "vpc" {
+  source  = "app.terraform.io/castle-training/vpc/aws"
+  version = "2.33.0"
 }
